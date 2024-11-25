@@ -41,7 +41,7 @@ public class PatchUserDataRestTest {
     }
     @Step("Проверить статус-код")
     public ValidatableResponse checkStatusCode(Response response){
-        return response.then().statusCode(400);
+        return response.then().statusCode(200);
     }
     @Step("Проверить данные на соответствие ожидаемым")
         public void checkUserDataAssertion(ValidatableResponse response, String expectedName, String expectedDescription){
